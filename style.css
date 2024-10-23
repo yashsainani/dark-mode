@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+body.toggled-body {
+    background-color: #242424;
+}
+
+#toggler {
+    width: 18rem;
+    height: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5rem;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#toggler.toggled {
+    background-color: #292929;
+    border: none;
+    box-shadow: inset 0 0 8px rgba(172, 172, 172, 0.5);
+}
+
+#toggler img {
+    width: 6rem;
+}
+
+#button {
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+    width: 50%;
+    height: 8rem;
+    position: absolute;
+    top: -0.1rem;
+    left: 0;
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1),
+                inset 4px 4px 8px rgb(255, 255, 255),
+                inset -4px -4px 8px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#button.toggled-button {
+    top: 0;
+    left: 50%;
+    background: linear-gradient(to bottom, #373737, #1d1d1d);
+    box-shadow: 0px 8px 20px rgba(133, 133, 133, 0.1),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+                inset -2px -2px 4px rgba(255, 255, 255, 0.4);
+}
+
+p {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15%;
+    transition: 0.5s;
+}
+
+p.toggled-p {
+    color: white;
+}
