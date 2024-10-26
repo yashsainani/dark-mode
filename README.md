@@ -1,6 +1,6 @@
 # Dark Mode Project
 
-![Dark Mode Preview](https://yashsainani.github.io/dark-mode/)
+[Dark Mode Preview](https://yashsainani.github.io/dark-mode/)
 
 ## Overview
 
